@@ -19,6 +19,8 @@ body {
 .navbar {
 
     display: flex;
+    position: sticky;
+    width: 100%;
     justify-content: space-between;
     background-color: white;
     color: black;
@@ -78,5 +80,189 @@ body {
     justify-content: center;
     color: #ffffff
 }
+
+/*CSS Formulario*/
+
+.navbar-formulario {
+
+    display: flex;
+    position: sticky;
+    width: 100%;
+    
+    justify-content: space-between;
+    background-color: #8c947d;
+    color: #e6e0d2;
+    align-items: center;
+}
+
+.logo-formulario img {
+
+    width: 50px;
+    height: 60px;
+    margin-top: 3px;
+    font-weight: bold;
+    padding-left: 40px;
+}
+
+.body-formulario {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    background-color: #e6e0d2;
+    color: rgb(44, 34, 34);
+    min-height: 50vh;
+    line-height: 1.6;
+    
+}
+
+.registro-formulario{
+    width: 400px;
+    background-color: #dcc1a8;
+    padding: 30px;
+    margin: auto;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    margin-top: 100px;
+    font-family: ;
+    color: #8c947d;
+    box-shadow: 7px 13px 37px #9c7f64;
+}
+
+.registro-formulario h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: ; /*poner tipografía*/
+
+}
+
+.control-formulario{
+    width: 90%;
+    background-color: #e6e0d2;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid black;
+    font-family: ;
+    font-size: 18px;
+}
+
+.registro-formulario p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.registro-formulario a{
+    color: #72858A;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.registro-formulario a:hover{
+    color: #72858A;
+    text-decoration: underline;
+}
+
+.registro-formulario .boton-formulario{
+    width: 90%;
+    background-color: none;
+    border: none;
+    padding: 12px;
+    color: #8c947d;
+    margin: 16px 16px;
+    border: 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    
+}
+
+.formulario-img {
+
+    background-image: url('/img/formulario.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 50vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.formulario-img h2{
+    color: #8c947d;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #2b2f24;
+    text-align: center; 
+    margin-top: 20px;
+}
+
+/*Términos y condiciones*/
+
+.contenedor-preguntasyrespuestas{
+    display: flex;
+    margin: 10px;
+    
+    
+}
+
+.contenedor-preguntas-img{
+    display: flex;
+    max-width: 50vh;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+.contenedor-preguntas-img img{
+    
+    width: 250px;
+    height: 250px;
+    object-fit: cover;   
+    
+     
+}
+
+.contenedor-preguntas-img img:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    transform: scale(1.05);
+    transform: rotate(-1.1deg) scale(1.05);
+    filter: brightness(0.8);
+    transition: 0.6s ease-out;
+}
+
+.preguntas{
+    border-radius: 20px;
+   
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+}
+
+
+.preguntas-1{
+    color: #72858A;
+    font-size: 16px;
+    font-family: ; /*poner tipografía*/
+
+}
+
+.preguntas-2{
+    color: black;
+    font-size: 14px;
+    font-family: ;/*poner tipografía*/
+
+}
+
+
+
 
 
