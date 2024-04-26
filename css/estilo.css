@@ -122,7 +122,7 @@ body {
     margin-bottom: 100px;
     border-radius: 30px;
     margin-top: 100px;
-    font-family: ;
+    font-family: ; /*poner tipografía*/
     color: #8c947d;
     box-shadow: 7px 13px 37px #9c7f64;
 }
@@ -142,7 +142,7 @@ body {
     border-radius: 4px;
     margin-bottom: 16px;
     border: 1px solid black;
-    font-family: ;
+    font-family: ; /*poner tipografía*/
     font-size: 18px;
 }
 
@@ -183,9 +183,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    height: 50vh;
-    
+    height: 50vh; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -259,6 +257,90 @@ body {
     color: black;
     font-size: 14px;
     font-family: ;/*poner tipografía*/
+
+}
+
+/* GRID */
+
+.contenedor-grid{
+    max-width: 1224px;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+
+}
+.contenedor-grid h2{
+    font-family: ; /* poner tipografía*/
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #ad7949;
+   
+    
+}
+
+.contenedor-grid h3{
+    font-family: ; /* poner tipografía*/
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    color: #72858A;
+    margin-bottom: 20px;
+    
+
+}
+
+.title-grid{
+    margin-bottom: 20px;
+    text-align: center;
+    color: #72858A;
+    font-family: ; /* poner tipografía*/
+    font-size: 18px;
+
+}
+
+.photo-gallery{
+    display: flex;
+    gap: 20px;
+    
+}
+
+.column-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.photo-grid img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.photo-grid img:hover{
+    cursor: pointer;
+    /* opacity: 0.7; */
+    transform: scale(1.2);
+    transform: rotate(1.2deg) scale(1.2);
+    filter: brightness(0.8);
+    transition: 0.6s ease-in;
+}
+
+
+@media(max-width:768px){
+    .photo-gallery{
+        flex-direction: column;
+    }
+}
+
+.frases-grid img{
+    max-width: 50px;
+    width: 50%;
+    left: 50%;
+    
+    
+
 
 }
 
