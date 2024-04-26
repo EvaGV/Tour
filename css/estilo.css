@@ -1,8 +1,82 @@
+body {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    color: rgb(44, 34, 34);
+    min-height: 50vh;
+    line-height: 1.6;
+    
+}
+
+
 * {
 
     margin: 0;
     padding: 0;
     display: border-box;
-    background-attachment: red;
 
 }
+
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    align-items: center;
+}
+
+.logo img {
+
+    width: 80px;
+    height: 80px;
+    font-weight: bold;
+    padding-left: 40px;
+}
+
+.logo a {
+
+    width: 50px;
+    height: 50px;
+}
+
+.menu {
+
+   display: flex;
+   gap: 20px;
+   list-style-type: none;
+
+}
+
+.menu li {
+    
+    margin-right: 60px;
+ 
+}
+
+.menu li a {
+
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+
+.encabezado-img {
+
+    background-image: url('/img/arboles.jpg');
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.encabezado-img h1 {
+
+    font-size: 30px;
+    justify-content: center;
+    color: #ffffff
+}
+
+
