@@ -1,0 +1,2 @@
+# La primera página que hice fue la del formulario y copié tu código del menú. Para ponerle el color y el logo lo que hice fue nombrarlo todo con -formulario (logo-formulario; navbar-formulario), si quieres mantener el color y modificar sobre esa base, puedes copiar el que ponga el contenido del que ponga formulario, pegarlo al principio del css donde hiciste el index y luego ya eliminaré todos los que tengan el -formulario para que sea en header y footer igual en todas las páginas.
+
