@@ -81,7 +81,7 @@ body {
     color: #ffffff
 }
 
-/*CSS Formulario*/
+/*Formulario*/
 
 .navbar-formulario {
 
@@ -108,13 +108,14 @@ body {
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #e6e0d2;
-    color: rgb(44, 34, 34);
+    /* color: rgb(44, 34, 34);
     min-height: 50vh;
-    line-height: 1.6;
+    line-height: 1.6; */
 
 }
 
 .registro-formulario {
+    display: grid;
     width: 400px;
     background-color: #dcc1a8;
     padding: 30px;
@@ -127,6 +128,12 @@ body {
     color: #8c947d;
     box-shadow: 7px 13px 37px #9c7f64;
 }
+
+@media (width < 480px) {
+    .registro-formulario {
+      width: 70%;
+    }
+  }
 
 .registro-formulario h4 {
     font-size: 22px;
@@ -180,6 +187,10 @@ body {
 
 }
 
+.registro-formulario .boton-formulario:hover {
+    background-color: #8c947d;
+    color: #e6e0d2;
+}
 .formulario-img {
 
     background-image: url('/img/formulario.webp');
@@ -200,34 +211,33 @@ body {
     -webkit-text-stroke-color: #2b2f24;
     text-align: center;
     margin-top: 20px;
+    font-family: ;
+    /*poner tipografía*/
 }
+
 
 /*Términos y condiciones*/
 
 .contenedor-preguntasyrespuestas {
-    display: flex;
+    display: grid;
     margin: 10px;
-
 
 }
 
 .contenedor-preguntas-img {
     display: flex;
-    max-width: 50vh;
+    /* max-width: 50vh; */
     width: 100%;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
     padding: 20px;
 
 }
 
 .contenedor-preguntas-img img {
-
     width: 250px;
     height: 250px;
+    border-radius: 5px;
     object-fit: cover;
-
 
 }
 
@@ -241,10 +251,14 @@ body {
 }
 
 .preguntas {
+    display: grid;
+    grid-template-columns: auto;
     border-radius: 20px;
+    padding: 20px;
     margin-top: 40px;
     margin-bottom: 40px;
     margin-right: 40px;
+    align-content: center;
 }
 
 
@@ -261,8 +275,42 @@ body {
     font-size: 14px;
     font-family: ;
     /*poner tipografía*/
-
 }
+
+@media (max-width:200px) {
+    .contenedor-preguntas-img {
+        flex-direction: column;
+    }
+}
+@media (max-width:200px){
+.preguntas{
+    flex-direction: column;
+}
+}
+
+@media (width <900px) {
+    .contenedor-preguntas-img {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .preguntas {
+        grid-template-columns: auto;
+    }
+}
+
+@media (width <750px) {
+    .preguntas {
+        grid-template-columns: auto;
+
+    }
+}
+
+@media (width < 480px) {
+    .contenedor-preguntasyrespuestas {
+      width: 25%;
+    }
+  }
 
 /* GRID */
 
@@ -271,7 +319,6 @@ body {
     width: 90%;
     margin: auto;
     padding: 40px 0;
-
 }
 
 .contenedor-grid h2 {
@@ -281,8 +328,6 @@ body {
     margin-bottom: 10px;
     text-align: center;
     color: #ad7949;
-
-
 }
 
 .contenedor-grid h3 {
@@ -293,8 +338,6 @@ body {
     text-align: center;
     color: #72858A;
     margin-bottom: 20px;
-
-
 }
 
 .title-grid {
@@ -347,4 +390,237 @@ body {
     width: 50%;
     left: 50%;
 
+}
+
+/* RESEÑAS*/
+
+
+.container-reviews {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.container-reviews-left {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.container-reviews-left h1 {
+    margin-bottom: 10px;
+    font: 14px;
+    color: #72858A;
+}
+
+.container-reviews-left p {
+    color: #ad7949;
+    margin-bottom: 10px;
+}
+
+.container-reviews-left button {
+
+    padding: 10px;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #8c947d;
+    color: beige;
+    font-size: 14px;
+    cursor: pointer;
+
+
+}
+
+.container-reviews-left button:hover {
+    background-color: #9c7f64;
+    color: #e6e0d2;
+
+}
+
+.container-reviews-right {
+    display: grid;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card {
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: #72858A;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px #2d4146;
+
+}
+
+.card img {
+    max-width: 150px;
+    border-radius: 100%;
+
+}
+
+.card-content {
+    display: flex;
+    gap: 10px;
+
+}
+
+.card-content span i {
+    font-size: 18px;
+    color: #dcc1a8;
+
+}
+
+.card-details p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: ;
+    /* poner tipografia*/
+    text-align: right;
+    font-size: 16px;
+
+}
+
+.card-details h4 {
+    text-align: right;
+    font-size: 13px;
+
+    font-family: ;
+    /* poner tipografia*/
+    margin-bottom: 10px;
+    margin-top: 40px;
+    color: #dcc1a8;
+}
+
+@media (width <1200px) {
+    .container-reviews {
+        gap: 20px;
+
+    }
+}
+
+@media (width <900px) {
+    .container-reviews {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .container-reviews-right {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width <750px) {
+    .container-reviews-right {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
+
+
+/* Precio */
+
+.pricing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.price {
+    color: #145666;
+    font-size: 40px;
+}
+
+.price2 {
+    color: #2d4146;
+}
+
+.price3 {
+    color: #72858A;
+    ;
+}
+
+.table-pricing {
+    background-color: #eff3e6;
+    padding: 30px;
+    /* border-color: #2b2f24; */
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 5px 5px 20px #ad7949;
+    margin-bottom: 50px;
+}
+
+.gold{
+    background-color: white ;
+}
+
+.caracteristicas {
+    font-size: 14px;
+    font-family: ;
+    /* poner tipografia*/
+}
+
+.button-pricing a {
+    background-color: #ad7949;
+    color: #e6e0d2;
+    text-decoration: none;
+    padding: 8px 22px;
+    margin-top: 20px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.button-pricing a:hover {
+    background-color: #72858A;
+}
+
+.price-img {
+
+    background-image: url('/img/price.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.price-img h2 {
+    color: #ad7949;
+    text-align: center;
+    margin-top: 20px;
+    font-family: ;
+    /*poner tipografía*/
+}
+
+@media (width <1200px) {
+    .pricing {
+        gap: 20px;
+
+    }
+}
+
+@media (width <900px) {
+
+    .pricing {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width <750px) {
+    .pricing {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
 }
