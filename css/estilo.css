@@ -1,10 +1,10 @@
 body {
 
-    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(44, 34, 34);
     min-height: 50vh;
     line-height: 1.6;
-    
+
 }
 
 
@@ -43,16 +43,16 @@ body {
 
 .menu {
 
-   display: flex;
-   gap: 20px;
-   list-style-type: none;
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
 
 }
 
 .menu li {
-    
+
     margin-right: 60px;
- 
+
 }
 
 .menu li a {
@@ -71,7 +71,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  
+
 }
 
 .encabezado-img h1 {
@@ -88,7 +88,7 @@ body {
     display: flex;
     position: sticky;
     width: 100%;
-    
+
     justify-content: space-between;
     background-color: #8c947d;
     color: #e6e0d2;
@@ -106,15 +106,15 @@ body {
 
 .body-formulario {
 
-    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #e6e0d2;
     color: rgb(44, 34, 34);
     min-height: 50vh;
     line-height: 1.6;
-    
+
 }
 
-.registro-formulario{
+.registro-formulario {
     width: 400px;
     background-color: #dcc1a8;
     padding: 30px;
@@ -122,49 +122,52 @@ body {
     margin-bottom: 100px;
     border-radius: 30px;
     margin-top: 100px;
-    font-family: ; /*poner tipografía*/
+    font-family: ;
+    /*poner tipografía*/
     color: #8c947d;
     box-shadow: 7px 13px 37px #9c7f64;
 }
 
-.registro-formulario h4{
+.registro-formulario h4 {
     font-size: 22px;
     margin-bottom: 20px;
     text-align: center;
-    font-family: ; /*poner tipografía*/
+    font-family: ;
+    /*poner tipografía*/
 
 }
 
-.control-formulario{
+.control-formulario {
     width: 90%;
     background-color: #e6e0d2;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
     border: 1px solid black;
-    font-family: ; /*poner tipografía*/
+    font-family: ;
+    /*poner tipografía*/
     font-size: 18px;
 }
 
-.registro-formulario p{
+.registro-formulario p {
     height: 40px;
     text-align: center;
     font-size: 18px;
     line-height: 40px;
 }
 
-.registro-formulario a{
+.registro-formulario a {
     color: #72858A;
     text-decoration: none;
     font-size: 16px;
 }
 
-.registro-formulario a:hover{
+.registro-formulario a:hover {
     color: #72858A;
     text-decoration: underline;
 }
 
-.registro-formulario .boton-formulario{
+.registro-formulario .boton-formulario {
     width: 90%;
     background-color: none;
     border: none;
@@ -174,7 +177,7 @@ body {
     border: 20px;
     border-radius: 4px;
     font-size: 16px;
-    
+
 }
 
 .formulario-img {
@@ -183,32 +186,32 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vh; 
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  
+
 }
 
-.formulario-img h2{
+.formulario-img h2 {
     color: #8c947d;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #2b2f24;
-    text-align: center; 
+    text-align: center;
     margin-top: 20px;
 }
 
 /*Términos y condiciones*/
 
-.contenedor-preguntasyrespuestas{
+.contenedor-preguntasyrespuestas {
     display: flex;
     margin: 10px;
-    
-    
+
+
 }
 
-.contenedor-preguntas-img{
+.contenedor-preguntas-img {
     display: flex;
     max-width: 50vh;
     width: 100%;
@@ -216,19 +219,19 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
-    
+
 }
 
-.contenedor-preguntas-img img{
-    
+.contenedor-preguntas-img img {
+
     width: 250px;
     height: 250px;
-    object-fit: cover;   
-    
-     
+    object-fit: cover;
+
+
 }
 
-.contenedor-preguntas-img img:hover{
+.contenedor-preguntas-img img:hover {
     cursor: pointer;
     opacity: 0.7;
     transform: scale(1.05);
@@ -237,88 +240,93 @@ body {
     transition: 0.6s ease-out;
 }
 
-.preguntas{
+.preguntas {
     border-radius: 20px;
-   
     margin-top: 40px;
     margin-bottom: 40px;
     margin-right: 40px;
 }
 
 
-.preguntas-1{
+.preguntas-1 {
     color: #72858A;
     font-size: 16px;
-    font-family: ; /*poner tipografía*/
+    font-family: ;
+    /*poner tipografía*/
 
 }
 
-.preguntas-2{
+.preguntas-2 {
     color: black;
     font-size: 14px;
-    font-family: ;/*poner tipografía*/
+    font-family: ;
+    /*poner tipografía*/
 
 }
 
 /* GRID */
 
-.contenedor-grid{
+.contenedor-grid {
     max-width: 1224px;
     width: 90%;
     margin: auto;
     padding: 40px 0;
 
 }
-.contenedor-grid h2{
-    font-family: ; /* poner tipografía*/
+
+.contenedor-grid h2 {
+    font-family: ;
+    /* poner tipografía*/
     font-size: 18px;
     margin-bottom: 10px;
     text-align: center;
     color: #ad7949;
-   
-    
+
+
 }
 
-.contenedor-grid h3{
-    font-family: ; /* poner tipografía*/
+.contenedor-grid h3 {
+    font-family: ;
+    /* poner tipografía*/
     font-size: 14px;
     font-style: italic;
     text-align: center;
     color: #72858A;
     margin-bottom: 20px;
-    
+
 
 }
 
-.title-grid{
+.title-grid {
     margin-bottom: 20px;
     text-align: center;
     color: #72858A;
-    font-family: ; /* poner tipografía*/
+    font-family: ;
+    /* poner tipografía*/
     font-size: 18px;
 
 }
 
-.photo-gallery{
+.photo-gallery {
     display: flex;
     gap: 20px;
-    
+
 }
 
-.column-grid{
+.column-grid {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.photo-grid img{
+.photo-grid img {
     width: 100%;
     height: 100%;
     border-radius: 5px;
     object-fit: cover;
 }
 
-.photo-grid img:hover{
+.photo-grid img:hover {
     cursor: pointer;
     /* opacity: 0.7; */
     transform: scale(1.2);
@@ -328,23 +336,15 @@ body {
 }
 
 
-@media(max-width:768px){
-    .photo-gallery{
+@media(max-width:768px) {
+    .photo-gallery {
         flex-direction: column;
     }
 }
 
-.frases-grid img{
+.frases-grid img {
     max-width: 50px;
     width: 50%;
     left: 50%;
-    
-    
-
 
 }
-
-
-
-
-
