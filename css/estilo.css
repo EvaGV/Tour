@@ -149,13 +149,13 @@ nav a:hover {
 
 }
 
-.atardecer img{
+.trenes{
 
     position: absolute;
     top: 450px;
     left: 550px;
-    width: 70%;
-    height: 70%;
+    width: 50%;
+    height: 50%;
     object-fit: cover;
     box-shadow: 0 0 12px 2px rgba(0, 0, 0, .2);
 }
