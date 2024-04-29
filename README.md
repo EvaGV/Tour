@@ -3,3 +3,5 @@
 Yo mañana por la tarde no estaré en casa, xq iré al cine jajaja, pero cuando vuelva a casa reviso lo que sea. 
 Espero que haya sido leve tu jornada de trabajo.
 HE ido poniendo los colores como me han apetecido con esa base de 4 colores y a veces lo ponía un poco más oscuro o más claro.
+
+He añadido al formulario un enlace para que al dar al boton de registrarse vaya al formulario de confirmacion.
